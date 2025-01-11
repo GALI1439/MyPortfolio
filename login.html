@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function handleLogin(event) {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            //Check the username and password
+            if (username === "user" && password === "password") {
+                // set a flag in session storage to indicate login success
+                sessionStorage.setItem('loginsuccess','true');
+
+                setTimeout(() => {
+                    window.location.href = 'index.html'; // Redirect to the success page
+                }, 100); 
+
+            } else {
+                    alert("Invalid username or password.");
+            }
+        });
+        window.onload = function() {
+            document.getElementById('loginForm').addEventListener('submit', handleLogin);
+        }
+    </script>
+</body>
+</html>

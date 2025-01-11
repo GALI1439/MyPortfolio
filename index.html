@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class= "logo">Gali Narasimha Rao</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>  
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Gali Narasimha Rao</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick= "toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assests/profile.JPG" alt="Rao's Picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello I'm</p>
+            <h1 class="title">Gali Narasimha Rao</h1>
+            <p class="section_text_p2">Mulesoft Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"
+                onclick="window.open('./assests/resume.docx')">Download CV
+                </button>
+                <button class="btn btn-color-1"
+                onclick="location.href='./#contact'">Contact Info
+                </button>
+            </div>
+            <div id="social-container">
+                <img src="./assests/linkedin.jpg" 
+                alt="My Linkedin Profile" 
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/galinarasimharao'"
+                />
+                <img src="./assests/github.png" 
+                alt="My GitHub Profile" 
+                class="icon" 
+                onclick="location.href='https://github.com/gaali143'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <p class="title">About Me</p>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./assests/about-pic.JPG" alt="Profile Picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assests/experience.jpg" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>3+ years <br/>Mulesoft Developer</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assests/education.jpg" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.E- Computer Science </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Certified Mulesoft Developer adept in all stages of advanced API Integration.  Knowledgeable in user interface, testing, and debugging processes. Able to effectively self-manage during independent projects, as well as collaborate in a team setting. Also experienced in Salesforce CRM
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.webp" alt="Arrow Icon" class="icon  arrow" onclick="location.href='./#experience'"/>
+    </section>
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">FrontEnd Developer</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>UI/UX</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>SASS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">BackEnd Developer</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Node Js</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Express Js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.webp" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <h2 class="title">Need to Update</h2>
+        <!-- <div class="experience-details-container">
+             <div class="details-container color-container">
+                <div class="article-container">
+                    <img src=".asses" alt="">
+                </div>
+             </div>
+        </div> -->
+        <img src="./assests/arrow.webp" alt="Arrow Icon" class="icon  arrow" onclick="location.href='./#contact'"/>
+    </section>
+    <section id="contact">
+        <p class="section_text_p1"> Get In Touch </p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assests/email.jpg" alt="Email Icon" class="icon email-icon">
+                <p><a href="mailto:narasimharao.gali1439@gmail.com">narasimharao.gali1439@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assests/linkedin.jpg" alt="Linkedin Icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/galinarasimharao">Linkedin</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Gali Narasimha Rao. All Rights are Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

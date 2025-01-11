@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Page</title>
+    <script>
+        window.onload = function() {
+            // Check if login success flag is set in sessionStorage
+            if (sessionStorage.getItem('loginSuccess') === 'true') {
+                // Show an alert message
+                alert('Login successful!');
+
+                // Remove the flag from sessionStorage
+                sessionStorage.removeItem('loginSuccess');
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>Success Page</h1>
+    <p>Welcome to the success page!</p>
+</body>
+</html>
